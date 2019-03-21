@@ -17,7 +17,7 @@ public interface SifSysUserQryDao {
 	public SifSysUserQry findOne(SifSysUserQryPk id);
 
 	public boolean exists(SifSysUserQryPk id);
-
+1111111
 	public long count();
 
 	public void delete(SifSysUserQryPk id);
@@ -47,33 +47,33 @@ public interface SifSysUserQryDao {
 	public SifSysUserQry getOne(SifSysUserQryPk id);
 	
 	/**
-	 * 根据模版查询实体
-	 * @param tmp 模版对象
-	 * @return 查询到的实体对象集合
+	 * 鏍规嵁妯＄増鏌ヨ瀹炰綋
+	 * @param tmp 妯＄増瀵硅薄
+	 * @return 鏌ヨ鍒扮殑瀹炰綋瀵硅薄闆嗗悎
 	 */
 	List<SifSysUserQry> queryByTemplate(final SifSysUserQry tmp);
 	
 	/**
-	 * 根据模版排序查询实体
-	 * @param tmp 模版对象
-	 * @param sort 排序模板
-	 * @return 查询到的实体对象集合
+	 * 鏍规嵁妯＄増鎺掑簭鏌ヨ瀹炰綋
+	 * @param tmp 妯＄増瀵硅薄
+	 * @param sort 鎺掑簭妯℃澘
+	 * @return 鏌ヨ鍒扮殑瀹炰綋瀵硅薄闆嗗悎
 	 */
 	List<SifSysUserQry> queryByTemplate(final SifSysUserQry tmp, Sort sort);
 	
 	/**
-	 * 根据模版分页排序查询实体
-	 * @param tmp 模版对象
-	 * @param pageable 分页排序模版
-	 * @return Page对象
+	 * 鏍规嵁妯＄増鍒嗛〉鎺掑簭鏌ヨ瀹炰綋
+	 * @param tmp 妯＄増瀵硅薄
+	 * @param pageable 鍒嗛〉鎺掑簭妯＄増
+	 * @return Page瀵硅薄
 	 */
 	Page<SifSysUserQry> queryByTemplate(final SifSysUserQry tmp,Pageable pageable);
 	
 	/**
-	 * 根据注册机构号和操作员号查询
-	 * @param registerCd 注册机构号
-	 * @param userCd	操作员号
-	 * @return 查询到的实体对象集合
+	 * 鏍规嵁娉ㄥ唽鏈烘瀯鍙峰拰鎿嶄綔鍛樺彿鏌ヨ
+	 * @param registerCd 娉ㄥ唽鏈烘瀯鍙�
+	 * @param userCd	鎿嶄綔鍛樺彿
+	 * @return 鏌ヨ鍒扮殑瀹炰綋瀵硅薄闆嗗悎
 	 */
 	List<SifSysUserQry> queryQryUsers(String registerCd, String userCd);
 
